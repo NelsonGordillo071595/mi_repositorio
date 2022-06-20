@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+    <title>My Webpage</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="header">
+        <!--Logo-->
+        <div class="header__logo">
+            <img 
+                src="../assets/Logo.jpg" 
+                title="logo"
+                alt="logo"
+                width="100px" 
+                height="100px"
+            />
+        </div>
+
+        <div class="header__titleynav">
+            <!--Nombre de la Compañía-->
+            <div class="header__title">
+                <h1 class="header__title--h2">
+                    Serendipity
+                </h1>
+            </div>
+
+            <!--Menú de Navegación-->
+            <nav class="header__barraNavegacion">
+                <ul class="header__barraNavegacion__listaNoOrdenada">
+                    <li class="header__barraNavegacion__elementoLista">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="header__barraNavegacion__elementoLista">
+                        <a href="../pages/newArrivals.html">New Arrivals</a>
+                    </li>
+                    <li class="header__barraNavegacion__elementoLista">
+                        <a href="../pages/shop.html">Shop</a>
+                    </li>
+                    <li class="header__barraNavegacion__elementoLista">
+                        <a href="../pages/contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Sección Principal de la Página-->
+    <section class="section">
+        <h2>
+            Registration
+        </h2>
+        <form>
+            <label for="firstname"> First Name </label>
+            <input type="text" id="firstname">
+            <label for="lastname"> Last Name </label>
+            <input type="text" id="lastname">
+            <br>
+            <br>
+            <label for="phone"> Phone Number </label>
+            <input type="tel" id="phone" placeholder="Text your phone number" maxlength="10">
+            <label for="email"> Email </label>
+            <input type="text" id="email" placeholder="Text your email">
+            <br>
+            <br>
+            <label>Gender</label>
+            <select>
+                <option selected="selected">Select your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <br>
+            <br>
+            <label>Are you a new client?</label>
+            <br>
+            <input type="radio" name="option" value="Yes">
+            <span>Yes</span>
+            <input type="radio" name="option" value="No">
+            <span>No</span>
+            <br>
+            <br>
+            <label>
+                Would you like to receive product updates and announcements via email type?
+            </label>
+            <br>
+            <input type="checkbox" name="accept">
+            <span>Yes</span>
+            <input type="checkbox" name="decline">
+            <span>No</span>
+            <br>
+            <br>
+            <label for="comments">Do you have any comments or suggestions?</label>
+            <br>
+            <br>
+            <textarea id="comments" rows="6" cols="50"></textarea>
+        </form>
+    </section>
+
+    <!--Pie de Pagína-->
+    <footer class="footer">
+        <div class="footer_h3">
+            <form>
+                <label for="email"> Send us feedback </label>
+                <br>
+                <input type="text" id="email">
+            </form>
+        </div>
+        <div class="footer_images">
+            <a href="../index.html">
+                <img 
+                src="../assets/logos.png" 
+                title="socialMedia"
+                alt="socialMedia"
+                width="80px"
+                height="40px">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

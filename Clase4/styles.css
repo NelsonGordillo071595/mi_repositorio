@@ -1,0 +1,20 @@
+.section {
+    position: relative;
+    background-color: beige;
+    padding: 20px;
+
+}
+
+.section .parrafos {
+    background-color: burlywood;
+    position: absolute;
+    width: 120px;
+    left: 40px;
+    top: 20px;
+    border: 01px solid black;
+}
+
+.section .spans {
+    background-color: grey;
+    border: 01px solid black;
+}
