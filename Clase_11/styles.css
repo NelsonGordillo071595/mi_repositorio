@@ -1,0 +1,41 @@
+.columna{
+    border:solid black 2px;
+}
+
+.columnaDos{
+    border: 02px solid;
+    background-color: rgb(96, 178, 140);
+}
+
+.header{
+    border-bottom: 01px solid #ccc;
+}
+
+.navbar{
+    color: white;
+    background-color: #111;   
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 5px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.articulo {
+    background-color: bisque;
+}
+
+.sidebar {
+    background-color: coral;
+}
+
+.masInfo{
+   background-color: blue; 
+}
