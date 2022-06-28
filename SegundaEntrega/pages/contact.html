@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width" name="viewport">
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">    
+    <title>Serendipity</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-lav fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="../assets/Logo.jpg" alt="" style="width: 15vw"/></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container-fluid">
+      <img class="img-fluid imagenprincipal" src="../assets/background.jpg" alt="">
+      </div>
+    </header>
+
+    <main class="container-fluid align-items-center">
+        <div class="row text-center">
+            <h2>Address</h2>
+        </div>
+        <section class="row ubicacion align-items-center">
+            <div class="col col-xs-12 col-md-6 direccion text-center">
+                <h4>Cali</h4>
+                <p>"Cra 127A # 47A-123, Ciudad Pacíficia"
+                    <br>
+                    "Telefóno: (315) 568 2494"
+                </p>
+            </div>
+            <div class="col col-md-5 container-fluid" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.026342441772!2d-76.52659068626437!3d3.3436501528610854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1b7f9050c13%3A0x485e3a8b93bb9487!2sCiudad%20Pac%C3%ADfica!5e0!3m2!1ses!2ses!4v1656378496790!5m2!1ses!2ses" 
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="row ubicacion align-items-center">
+            <div class="formContent">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                            <label for="ContactFormName" class="hidden-label">Name</label>
+                            <input type="text" id="ContactFormName" class="form-control" name="contact[name]" autocapitalize="words" value="">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                            <label for="ContactFormEmail" class="hidden-label">Email</label>
+                            <input type="email" id="ContactFormEmail" class="form-control" name="contact[email]" autocorrect="off" autocapitalize="off" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ContactFormPhone" class="hidden-label">Phone Number</label>
+                    <input type="tel" id="ContactFormPhone" class="form-control" name="contact[phone-number]" pattern="[0-9\-]*" value="">
+                </div>
+                <div class="form-group">
+                    <label for="ContactFormMessage" class="hidden-label">Message</label>
+                    <textarea rows="6" id="ContactFormMessage" class="form-control" name="contact[body]"></textarea>
+                </div>
+                <div class="form-button">
+                    <input type="submit" class="btn btnVelaOne" value="Send Message">
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- Footer -->
+  <footer>
+    <div class="container-fluid row align-items-center">
+      <div class="col col-6 text-center">
+        <div class="row">
+          <form>
+            <div class="form-group">
+              <label for="InputEmail1">Newsletter</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="col col-5 text-center">
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook col"></i></a></li>
+          <li><a href="https://wa.me/541131508000" target="_blank"><i class="bi bi-whatsapp col"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram col"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright py-3 row justify-content-center">© 2020 Copyright</div>
+  </footer>
+
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
