@@ -1,0 +1,49 @@
+@import "./variables";
+.social-icons{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+        margin: 0.8em;
+        position: relative;
+        font-size: 1.2em;
+    }
+    i{
+        color: #fff;
+        position: absolute;
+        top: 0.1vw;
+        left: 0.8vw;
+        transition: all 265ms ease-out;
+    }
+    a{
+        display: inline-block;
+        &::before{
+            transform: scale(0.5);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: "";
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            transition: all 265ms ease-out;
+        }
+        &:hover::before{
+            transform: scale(0);
+            transition: all 265ms ease-in;
+        }
+        &:hover{
+            i{
+                transform: scale(2);
+                -ms-transform: scale(2);
+                -webkit-transform: scale(2);
+                color: #fff;
+                background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+                transition: all 265ms ease-out;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 265ms ease-in;
+            }
+        }
+    }
+}
